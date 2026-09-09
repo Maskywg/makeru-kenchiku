@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>負ける建築——隈研吾與弱建築的哲學革命</title>
+<meta name="description" content="從M2大廈的失敗到新國立競技場，從梼原町到台灣、北歐，深讀隈研吾「負ける建築」哲學的起源、實踐、爭議與世界對照。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="負ける建築——隈研吾與弱建築的哲學革命">
+<meta property="og:description" content="從M2大廈的失敗到新國立競技場，從梼原町到台灣、北歐，深讀隈研吾「負ける建築」哲學的起源、實踐、爭議與世界對照。">
+<meta property="og:image" content="https://maskywg.github.io/makeru-kenchiku/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://maskywg.github.io/makeru-kenchiku/">
+<meta property="og:locale" content="zh_TW">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="負ける建築——隈研吾與弱建築的哲學革命">
+<meta name="twitter:description" content="從M2大廈的失敗到新國立競技場，從梼原町到台灣、北歐，深讀隈研吾「負ける建築」哲學的起源、實踐、爭議與世界對照。">
+<meta name="twitter:image" content="https://maskywg.github.io/makeru-kenchiku/og-image.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #f6f1e7;
+    --bg-card: #efe7d8;
+    --bg-deep: #ece3d1;
+    --ink: #2a241c;
+    --ink-soft: #5a5147;
+    --wood: #a9764a;
+    --wood-deep: #7c5433;
+    --moss: #6d7a5e;
+    --stone: #8b8577;
+    --black-lacquer: #211d18;
+    --line: rgba(42,36,28,0.14);
+    --max-w: 920px;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Noto Sans TC", "PingFang TC", sans-serif;
+    font-weight: 300;
+    line-height: 1.9;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1,h2,h3,h4{
+    font-family: "Noto Serif TC", serif;
+    font-weight: 600;
+    color: var(--ink);
+    letter-spacing: 0.02em;
+  }
+  a{ color: var(--wood-deep); }
+  .wrap{ max-width: var(--max-w); margin: 0 auto; padding: 0 28px; }
+  img{ max-width:100%; display:block; }
+
+  /* ---------- 粒子化格柵背景元素 ---------- */
+  .lattice-divider{
+    height: 64px;
+    background-image: repeating-linear-gradient(
+      90deg,
+      var(--wood) 0px, var(--wood) 3px,
+      transparent 3px, transparent 22px
+    );
+    opacity: 0.35;
+    mask-image: linear-gradient(to bottom, transparent, black 40%, black 60%, transparent);
+  }
+  .lattice-thin{
+    height: 34px;
+    background-image: repeating-linear-gradient(
+      90deg,
+      var(--stone) 0px, var(--stone) 1px,
+      transparent 1px, transparent 14px
+    );
+    opacity: 0.4;
+  }
+
+  /* ---------- HERO：刻意內斂，不搶戲 ---------- */
+  header.hero{
+    position: relative;
+    padding: 120px 28px 90px;
+    text-align: center;
+    background:
+      linear-gradient(180deg, var(--bg) 0%, var(--bg) 100%);
+    overflow: hidden;
+  }
+  header.hero::before{
+    content:"";
+    position:absolute; inset:0;
+    background-image: repeating-linear-gradient(
+      90deg,
+      var(--ink) 0px, var(--ink) 1px,
+      transparent 1px, transparent 34px
+    );
+    opacity: 0.045;
+    pointer-events:none;
+  }
+  .hero-jp{
+    font-family:"Noto Serif TC",serif;
+    font-size: clamp(2.6rem, 8vw, 5rem);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    line-height: 1.25;
+    position: relative;
+  }
+  .hero-sub{
+    margin-top: 22px;
+    font-size: 1.05rem;
+    color: var(--ink-soft);
+    font-weight: 400;
+    position: relative;
+  }
+  .hero-quote{
+    max-width: 620px;
+    margin: 46px auto 0;
+    font-size: 1rem;
+    color: var(--ink-soft);
+    border-top: 1px solid var(--line);
+    padding-top: 28px;
+    position: relative;
+  }
+  .kicker{
+    display:inline-block;
+    font-size: 0.75rem;
+    letter-spacing: 0.3em;
+    color: var(--wood-deep);
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    position: relative;
+  }
+
+  /* ---------- SECTION 通用 ---------- */
+  section{ padding: 74px 0; }
+  section.alt{ background: var(--bg-deep); }
+  .eyebrow{
+    font-size: 0.78rem;
+    letter-spacing: 0.25em;
+    color: var(--wood-deep);
+    margin-bottom: 10px;
+  }
+  h2.title{
+    font-size: clamp(1.6rem, 4vw, 2.2rem);
+    margin-bottom: 8px;
+  }
+  .lede{
+    color: var(--ink-soft);
+    font-size: 1rem;
+    max-width: 640px;
+    margin-bottom: 40px;
+  }
+  p{ margin-bottom: 1.1em; font-size: 0.98rem; }
+  p:last-child{ margin-bottom: 0; }
+
+  /* ---------- 圖片卡片 ---------- */
+  figure.photo{
+    margin: 32px 0;
+  }
+  figure.photo img{
+    width: 100%;
+    border-radius: 2px;
+    filter: saturate(0.92);
+  }
+  figcaption{
+    margin-top: 10px;
+    font-size: 0.8rem;
+    color: var(--ink-soft);
+    line-height: 1.6;
+  }
+  figcaption a{ color: var(--ink-soft); }
+
+  /* ---------- 對照區塊：勝つ vs 負ける ---------- */
+  .contrast{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+    margin: 30px 0 10px;
+  }
+  .contrast > div{
+    background: var(--bg);
+    padding: 28px 26px;
+  }
+  .contrast h4{
+    font-size: 0.95rem;
+    letter-spacing: 0.08em;
+    margin-bottom: 12px;
+  }
+  .contrast .win h4{ color: var(--black-lacquer); }
+  .contrast .lose h4{ color: var(--wood-deep); }
+  .contrast ul{ list-style:none; }
+  .contrast li{
+    font-size: 0.88rem;
+    color: var(--ink-soft);
+    padding: 6px 0;
+    border-top: 1px dashed var(--line);
+  }
+  .contrast li:first-of-type{ border-top:none; }
+  @media (max-width: 640px){
+    .contrast{ grid-template-columns: 1fr; }
+  }
+
+  /* ---------- 時間軸 ---------- */
+  .timeline{ position:relative; margin-top: 36px; padding-left: 26px; border-left: 1px solid var(--line); }
+  .tl-item{ position:relative; padding-bottom: 34px; }
+  .tl-item:last-child{ padding-bottom:0; }
+  .tl-item::before{
+    content:"";
+    position:absolute; left:-31px; top: 4px;
+    width: 9px; height:9px; border-radius: 50%;
+    background: var(--wood);
+  }
+  .tl-year{
+    font-family:"Noto Serif TC",serif;
+    font-weight:600; color: var(--wood-deep);
+    font-size: 0.95rem; margin-bottom: 4px;
+  }
+  .tl-body{ font-size: 0.92rem; color: var(--ink-soft); }
+
+  /* ---------- 案例卡片格 ---------- */
+  .case-grid{
+    display:grid; grid-template-columns: 1fr 1fr;
+    gap: 30px 34px;
+    margin-top: 34px;
+  }
+  @media (max-width: 700px){ .case-grid{ grid-template-columns: 1fr; } }
+  .case{ border-top: 2px solid var(--wood); padding-top: 16px; }
+  .case img{ margin-bottom: 14px; filter: saturate(0.92); }
+  .case h3{ font-size: 1.08rem; margin-bottom: 8px; }
+  .case p{ font-size: 0.9rem; color: var(--ink-soft); }
+  .tag{
+    display:inline-block; font-size:0.7rem; letter-spacing:0.05em;
+    color: var(--moss); border:1px solid var(--moss);
+    padding: 2px 8px; border-radius: 20px; margin-bottom: 10px;
+  }
+
+  /* ---------- 台灣/北歐 作品表 ---------- */
+  table.works{ width:100%; border-collapse: collapse; margin-top: 28px; font-size: 0.88rem; }
+  table.works th, table.works td{
+    text-align:left; padding: 12px 14px; border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+  table.works th{
+    font-family:"Noto Serif TC",serif; font-weight:600;
+    color: var(--wood-deep); font-size: 0.8rem; letter-spacing:0.05em;
+  }
+  table.works td.status{ white-space:nowrap; color: var(--moss); font-size:0.8rem; }
+  .overflow-x{ overflow-x:auto; }
+
+  /* ---------- 世界對照卡 ---------- */
+  .compare-list{ margin-top: 30px; }
+  .compare-item{
+    display:grid; grid-template-columns: 160px 1fr;
+    gap: 20px;
+    padding: 22px 0;
+    border-top: 1px dashed var(--line);
+  }
+  .compare-item:first-child{ border-top:none; }
+  .compare-name{ font-family:"Noto Serif TC",serif; font-weight:600; font-size:1rem; }
+  .compare-loc{ font-size:0.78rem; color: var(--stone); margin-top:4px; }
+  .compare-desc{ font-size:0.9rem; color: var(--ink-soft); }
+  @media (max-width:560px){ .compare-item{ grid-template-columns: 1fr; } }
+
+  /* ---------- 反思區塊：刻意用黑漆質感呼應 奥社の茶屋 ---------- */
+  section.reflect{
+    background: var(--black-lacquer);
+    color: #e9e2d3;
+  }
+  section.reflect h2.title, section.reflect h3{ color: #f2ead9; }
+  section.reflect .eyebrow{ color: #c99a63; }
+  section.reflect .lede, section.reflect p{ color: #c9c0ac; }
+  section.reflect .case{ border-top-color:#c99a63; }
+
+  /* ---------- 定義引言塊 ---------- */
+  blockquote{
+    font-family:"Noto Serif TC",serif;
+    font-size: 1.1rem;
+    line-height: 1.9;
+    color: var(--ink);
+    border-left: 3px solid var(--wood);
+    padding: 4px 0 4px 22px;
+    margin: 26px 0;
+  }
+  blockquote cite{
+    display:block; margin-top: 10px; font-family:"Noto Sans TC",sans-serif;
+    font-size: 0.78rem; color: var(--ink-soft); font-style: normal;
+  }
+
+  footer{
+    padding: 60px 0 80px;
+    text-align:center;
+  }
+  footer .kicker{ margin-bottom: 24px; }
+  .sources{
+    text-align:left; font-size: 0.78rem; color: var(--ink-soft);
+    max-width: 640px; margin: 30px auto 0;
+    columns: 1;
+  }
+  .sources li{ margin-bottom: 6px; list-style:none; }
+  .sources a{ word-break: break-all; }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="kicker">Kengo Kuma / 隈研吾</span>
+    <h1 class="hero-jp">負ける建築</h1>
+    <p class="hero-sub">建築不必贏。它可以輸給場所、輸給材料、輸給時間——然後被記住的，是風景，不是建築本身。</p>
+    <div class="hero-quote">
+      「建築本質上『どうしようもなく強い』——無可迴避地強大。負ける建築要談的不是討好式的軟弱，而是先自覺這股強大，再讓它轉化為與場所共存的姿態。」<br>
+      <span style="font-size:0.85rem; opacity:0.75;">——隈研吾《負ける建築》核心命題（松岡正剛解讀）</span>
+    </div>
+  </div>
+</header>
+
+<div class="lattice-divider"></div>
+
+<!-- ===================== 定義 ===================== -->
+<section id="def">
+  <div class="wrap">
+    <div class="eyebrow">DEFINITION 定義</div>
+    <h2 class="title">什麼是「負ける建築」</h2>
+    <p class="lede">2004年，隈研吾出版《負ける建築》，把1995年後陸續發表的建築論集結成書。這不是一套風格，而是一套對「建築該如何存在」的根本立場。</p>
+
+    <p>「負ける建築」主張：建築不該以紀念性、視覺形象或支配環境的姿態存在，而應主動向場所、材料與時間「認輸」——接納環境的外力，消隱自身作為物件的存在感，讓建築融入而非統治周遭的生活與風景。</p>
+
+    <div class="contrast">
+      <div class="win">
+        <h4>勝つ建築 ｜ 20世紀型</h4>
+        <ul>
+          <li>都市裡支配天際線的高樓</li>
+          <li>追求視覺形象與不朽性</li>
+          <li>根植於凱因斯經濟學的公共投資邏輯</li>
+          <li>依賴象徵性、紀念性宣示自身存在</li>
+        </ul>
+      </div>
+      <div class="lose">
+        <h4>負ける建築 ｜ 隈研吾的主張</h4>
+        <ul>
+          <li>具柔軟性，接納環境外力</li>
+          <li>把量體拆解成細碎的材料顆粒</li>
+          <li>讓光、空氣、水穿透流動</li>
+          <li>目的是讓人「忘記建築的存在」</li>
+        </ul>
+      </div>
+    </div>
+
+    <p>隈研吾引1995年阪神大地震、地下鐵沙林事件、2001年9月11日恐怖攻擊為例——這些事件揭示「勝つ建築」看似堅固，實則最先崩塌、最脆弱。真正的強者，是懂得如何「輸」的建築。</p>
+  </div>
+</section>
+
+<div class="lattice-thin"></div>
+
+<!-- ===================== 起源：M2大廈的挫敗 ===================== -->
+<section class="alt" id="origin">
+  <div class="wrap">
+    <div class="eyebrow">ORIGIN 起源</div>
+    <h2 class="title">起點是一場徹底的失敗</h2>
+    <p class="lede">在講「負ける建築」之前，得先講一棟隈研吾自己設計、後來讓他悔恨了十年的建築。</p>
+
+    <figure class="photo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/M2_Building.jpg" alt="M2大廈，東京世田谷區，隈研吾1991年設計">
+      <figcaption>M2大廈（東京世田谷區，1991）。攝影：<a href="https://commons.wikimedia.org/wiki/User:Wiiii" target="_blank" rel="noopener">Wiiii</a>，CC BY-SA 3.0，取自 <a href="https://commons.wikimedia.org/wiki/File:M2_Building.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>。原為馬自達汽車展示中心，現作為儀式會館使用。</figcaption>
+    </figure>
+
+    <p>1991年，隈研吾設計東京「M2大廈」——馬自達汽車展示中心，一座刻意拼貼、風格誇張的後現代作品，中央立著一根巨大的愛奧尼克柱。這是他當時最顯眼的作品，也是泡沫經濟浮誇美學的縮影。</p>
+
+    <p>結果建築評論界對這棟建築的評價近乎全面否定。日本泡沫經濟崩壞後，隈研吾因M2大廈的爭議，近十年接不到東京的案子，被迫將事業重心移往地方——他去了高知縣梼原町。這段挫敗經驗讓他徹底反思：真正想蓋的建築，是M2的「完全反面」——一種會「消失」在自然環境中的建築，而不是強調自我存在感的紀念碑。</p>
+
+    <blockquote>負ける建築不是天生的哲學，是被罵出來的哲學。<cite>——M2大廈的爭議，是隈研吾自己的「勝つ建築」失敗品</cite></blockquote>
+  </div>
+</section>
+
+<div class="lattice-thin"></div>
+
+<!-- ===================== 手段：粒子化 ===================== -->
+<section id="particle">
+  <div class="wrap">
+    <div class="eyebrow">METHOD 手段</div>
+    <h2 class="title">粒子化——把「塊」打散成「粒子」</h2>
+    <p class="lede">如果「負ける建築」是理念，「粒子化」（隈研吾本人的用語）就是把理念變成構造的具體操作方法。</p>
+
+    <p>戰後日本建築深受柯比意影響，習慣用厚重的混凝土「塊」構成量體——一整片牆、一整塊樓板，材料連續、密實、不透光。隈研吾的做法相反：把材料拆解成大量細小的單元——木格柵、百葉、瓦片、編織薄板、細木構件——再用這些「粒子」堆疊、排列出整棟建築。</p>
+
+    <p>這麼做的理由，直接連回「負ける建築」的目的：光、風、聲音能穿過細小的孔隙，模糊建築內外的邊界，弱化建築的整體感與支配性。局部壞了也只需替換那一顆粒子，理論上呼應「接受時間與耗損」的哲學——雖然實務上，這個理想後面會遇到現實的考驗。</p>
+
+    <figure class="photo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Asakusa_Culture_Tourist_Information_Center_dllu.jpg" alt="淺草文化觀光中心，東京，隈研吾設計，分層木構造">
+      <figcaption>淺草文化觀光中心（東京台東區，2012）。攝影：<a href="https://commons.wikimedia.org/wiki/User:Dllu" target="_blank" rel="noopener">Daniel L. Lu</a>，CC BY-SA 4.0，取自 <a href="https://commons.wikimedia.org/wiki/File:Asakusa_Culture_Tourist_Information_Center_dllu.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>。把八層樓的量體拆解成一疊疊獨立的木構造斜屋頂，像是把「町屋」垂直堆疊起來，正面對淺草雷門與傳統街景。</figcaption>
+    </figure>
+
+    <p>2021年台灣忠泰美術館「場域・啟發—隈研吾展」，隈研吾自己選用四個關鍵詞貫串創作脈絡：<strong>孔洞、傾斜、粒子、時間</strong>——「粒子」正是他本人認定的核心創作邏輯之一，不是後人替他歸納的說法。</p>
+  </div>
+</section>
+
+<div class="lattice-thin"></div>
+
+<!-- ===================== 實踐田野：梼原町 ===================== -->
+<section class="alt" id="yusuhara">
+  <div class="wrap">
+    <div class="eyebrow">FIELD 田野</div>
+    <h2 class="title">梼原町——理論落地的三十年</h2>
+    <p class="lede">高知縣一個人口僅約三千人的山中小鎮，是「負ける建築」從理論走向實踐的長期田野。</p>
+
+    <figure class="photo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/%E3%82%86%E3%81%99%E3%81%AF%E3%82%89%E9%9B%B2%E3%81%AE%E4%B8%8A%E3%81%AE%E5%9B%B3%E6%9B%B8%E9%A4%A8%EF%BC%88%E6%A2%BC%E5%8E%9F%E7%94%BA%E7%AB%8B%E5%9B%B3%E6%9B%B8%E9%A4%A8%EF%BC%89_01.jpg" alt="雲の上の図書館，梼原町立圖書館，隈研吾設計">
+      <figcaption>雲の上の図書館（梼原町立圖書館，2018）。CC0，取自 <a href="https://commons.wikimedia.org/wiki/File:%E3%82%86%E3%81%99%E3%81%AF%E3%82%89%E9%9B%B2%E3%81%AE%E4%B8%8A%E3%81%AE%E5%9B%B3%E6%9B%B8%E9%A4%A8%EF%BC%88%E6%A2%BC%E5%8E%9F%E7%94%BA%E7%AB%8B%E5%9B%B3%E6%9B%B8%E9%A4%A8%EF%BC%89_01.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>。大量使用梼原產木材，入館需脫鞋，感受木頭的溫度與香氣。</figcaption>
+    </figure>
+
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-year">1987</div>
+        <div class="tl-body">一位當地建築師邀請隈研吾參與梼原公民館的木造建築保存運動，他深受當地木構造傳統感動，種下日後長期合作的種子。</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-year">1994</div>
+        <div class="tl-body">雲の上のホテル完工——梼原町第一座隈研吾建築。</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-year">2006 / 2010</div>
+        <div class="tl-body">梼原町總合廳舍、雲の上のギャラリー（木橋博物館）、まちの駅ゆすはら陸續完工。</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-year">2018</div>
+        <div class="tl-body">YURURIゆすはら、雲の上の図書館開館——地方公共建築的木構造實驗持續了三十年以上。</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-year">2021</div>
+        <div class="tl-body">雲の上のホテル因漏雨與木材劣化拆除，僅使用27年。這個轉折，後面「反思與爭議」一節會細談。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="lattice-thin"></div>
+
+<!-- ===================== 案例佐證 ===================== -->
+<section id="cases">
+  <div class="wrap">
+    <div class="eyebrow">EVIDENCE 案例佐證</div>
+    <h2 class="title">當理念被放到最大——與最小</h2>
+    <p class="lede">「負ける建築」被驗證得最徹底的兩端：一端是奧運主場館的國家級規模，另一端是神社參道口的一間小茶屋。</p>
+
+    <div class="case-grid">
+      <div class="case">
+        <span class="tag">國家級規模</span>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Exterior_of_Japan_National_Stadium.jpg" alt="新國立競技場，東京，隈研吾設計">
+        <h3>新國立競技場（東京，2019）</h3>
+        <p>2015年12月22日競圖以610:602險勝伊東豊雄團隊，取代原先因造價暴增至約3000億日圓而放棄的Zaha Hadid方案。隈研吾以奈良法隆寺五重塔「疊簷」為靈感，用日本47都道府縣提供的杉木與松木，包覆整座容納6.8萬席的體育場，讓巨大量體在視覺上軟化，融入明治神宮的森林景觀。最終造價1569億日圓，如期完工且未超支——證明即便是天生該追求紀念性、宣示國力的建築類型，也可以選擇不用支配姿態。</p>
+        <p style="font-size:0.78rem; color:var(--stone);">攝影：<a href="https://commons.wikimedia.org/wiki/User:Indiana_jo" target="_blank" rel="noopener">Indiana jo</a>，CC BY-SA 4.0，<a href="https://commons.wikimedia.org/wiki/File:Exterior_of_Japan_National_Stadium.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></p>
+      </div>
+
+      <div class="case">
+        <span class="tag">傳統重建</span>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Ginza_Kabukiza_2013_0428.jpg" alt="歌舞伎座，東京銀座，隈研吾設計">
+        <h3>歌舞伎座（東京銀座，2013）</h3>
+        <p>歌舞伎座第五代重建案，隈研吾保留了傳統歌舞伎劇場的桃山風格屋簷輪廓，卻在背後接上一棟29層的辦公塔樓。低樓層向傳統低頭、高樓層向城市開發現實妥協——是「負ける建築」在寸土寸金的銀座商業區，與經濟現實談判出的折衷方案。</p>
+        <p style="font-size:0.78rem; color:var(--stone);">攝影：<a href="https://commons.wikimedia.org/wiki/User:Tak1701d" target="_blank" rel="noopener">Tak1701d</a>，公有領域，<a href="https://commons.wikimedia.org/wiki/File:Ginza_Kabukiza_2013_0428.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></p>
+      </div>
+
+      <div class="case">
+        <span class="tag">全球首件海外作品</span>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/V%26A_Dundee_-_August_2019.jpg" alt="V&A Dundee，蘇格蘭，隈研吾設計">
+        <h3>V&A Dundee（蘇格蘭鄧迪，2019）</h3>
+        <p>維多利亞與艾伯特博物館倫敦以外的首個分館，也是隈研吾在英國的第一件作品。造型靈感取自蘇格蘭東海岸的懸崖峭壁，用超過2500塊混凝土石板堆疊出粗獷的「波浪」量體——這裡材料顆粒化的對象不是溫潤的木頭，而是厚重的石材，示範「負ける建築」如何回應完全不同氣候與地質的場所。</p>
+        <p style="font-size:0.78rem; color:var(--stone);">攝影：<a href="https://commons.wikimedia.org/wiki/User:Cs-wolves" target="_blank" rel="noopener">Cs-wolves</a>，CC BY-SA 4.0，<a href="https://commons.wikimedia.org/wiki/File:V%26A_Dundee_-_August_2019.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></p>
+      </div>
+
+      <div class="case">
+        <span class="tag">台灣・最新完工</span>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/FCU_Virtuos_Hall_20250216_01.jpg" alt="逢甲大學共善樓，台中，隈研吾設計">
+        <h3>逢甲大學共善樓（台中水湳，2025）</h3>
+        <p>全台唯一的校園地景建築，2025年2月17日啟用。鋼構搭配客製帷幕系統與多層金屬屋面，基地面積4.94萬平方公尺，2019年開始設計、2022至2025年施工，由興建台中國家歌劇院的麗明營造承造。是隈研吾「負ける建築」哲學與逢甲大學「共善興學」核心價值的結合。</p>
+        <p style="font-size:0.78rem; color:var(--stone);">來源：臺中市政府，公版授權，<a href="https://commons.wikimedia.org/wiki/File:FCU_Virtuos_Hall_20250216_01.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="lattice-thin"></div>
+
+<!-- ===================== 台灣作品 ===================== -->
+<section class="alt" id="taiwan">
+  <div class="wrap">
+    <div class="eyebrow">TAIWAN 台灣連結</div>
+    <h2 class="title">隈研吾在台灣</h2>
+    <p class="lede">台灣同時擁有他<strong>在台首作</strong>（風檐）、<strong>唯一冠名作品</strong>（Kuma Tower）與<strong>在台首座教堂</strong>（柳原教會）——三個「第一」都在這裡。</p>
+
+    <div class="overflow-x">
+    <table class="works">
+      <thead><tr><th>作品</th><th>地點</th><th>狀態</th><th>特色</th></tr></thead>
+      <tbody>
+        <tr><td>風檐</td><td>新竹 The One南園</td><td class="status">2015 已完工</td><td>隈研吾在台首作，738片檜木交疊景觀裝置，回應新竹「九降風」</td></tr>
+        <tr><td>白石畫廊台北空間</td><td>台北</td><td class="status">2018 已完工</td><td>首次畫廊設計，檜木水平堆疊，洞穴感探索空間</td></tr>
+        <tr><td>星巴克花蓮洄瀾門市</td><td>花蓮</td><td class="status">2018 已完工</td><td>29個貨櫃交疊，亞洲首間貨櫃屋星巴克</td></tr>
+        <tr><td>逢甲大學共善樓</td><td>台中水湳</td><td class="status">2025 已完工</td><td>全台唯一校園地景建築</td></tr>
+        <tr><td>台中巨蛋</td><td>台中水湳</td><td class="status">2030 興建中</td><td>與九典聯合建築師事務所合作，靈感取自大甲藺草編織</td></tr>
+        <tr><td>Kuma Tower（聯聚中維大廈）</td><td>台中西屯</td><td class="status">2028 興建中</td><td>隈研吾生涯唯一冠名作品，42層／208米，層層旋轉疊簷</td></tr>
+        <tr><td>勤美術館2.0「勤美之森」</td><td>台中</td><td class="status">規劃中</td><td>台中勤美術館擴建案</td></tr>
+        <tr><td>D-ONE第一大天地商場</td><td>台中烏日</td><td class="status">2026 興建中</td><td>「月亮灣」環形空橋</td></tr>
+        <tr><td>CMP柳原教會</td><td>台中</td><td class="status">興建中</td><td>在台首座教堂，基地狹窄故向上生長，呼應雙手合十祈禱</td></tr>
+        <tr><td>高雄岡山新行政中心</td><td>高雄岡山</td><td class="status">2029 興建中</td><td>以基地內「夫妻樹」為設計主軸，6層樓垂直綠洲</td></tr>
+        <tr><td>高雄楠梓雙星（R20聯開案）</td><td>高雄楠梓</td><td class="status">2030 興建中</td><td>16層／24層住辦大樓，空中藝術綠廊道連接兩案行政中心</td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <p style="margin-top:28px; font-size:0.85rem; color:var(--ink-soft);">另有2021年忠泰美術館「場域・啟發—隈研吾展」（戶外新作《摺箱》移動式茶室）與台南「五感的建築」世界巡迴展（展出《竹曲》茶室，為台中巨蛋外觀原型），屬於展覽裝置而非永久建築。</p>
+  </div>
+</section>
+
+<div class="lattice-thin"></div>
+
+<!-- ===================== 北歐連結 ===================== -->
+<section id="nordic">
+  <div class="wrap">
+    <div class="eyebrow">NORDIC 北歐連結</div>
+    <h2 class="title">丹麥、挪威——與童話的重逢</h2>
+    <p class="lede">丹麥歐登西的安徒生博物館正是出自隈研吾之手，用弧線綠籬花園呼應安徒生童話裡的迷路感。</p>
+
+    <div class="compare-list">
+      <div class="compare-item">
+        <div>
+          <div class="compare-name">H.C. Andersen's House</div>
+          <div class="compare-loc">丹麥・歐登西 ｜ 2021競圖首獎／2022開幕</div>
+        </div>
+        <div class="compare-desc">地面上以弧線綠籬組成迷宮花園，蜿蜒路徑呼應地底展廳的空間結構；展亭用雲杉骨架、外覆細落葉松格柵，刻意呼應安徒生歐登西童年老家的半木構造外觀，讓建築融進花園。是「負ける建築」與「粒子化」在文學紀念館類型上的示範。</div>
+      </div>
+      <div class="compare-item">
+        <div>
+          <div class="compare-name">丹麥水文化中心</div>
+          <div class="compare-loc">哥本哈根 Papirøen 紙島 ｜ 預計2026秋開幕</div>
+        </div>
+        <div class="compare-desc">5000平方公尺，哥本哈根濱水文化總體規劃的一部分。</div>
+      </div>
+      <div class="compare-item">
+        <div>
+          <div class="compare-name">易卜生圖書館</div>
+          <div class="compare-loc">挪威・Skien 希恩 ｜ 2020競圖首獎</div>
+        </div>
+        <div class="compare-desc">選址在劇作家易卜生的出生地，弧線量體沿基地周邊樹木排列，屋頂用挪威傳統木瓦系統做成隆起的地景式綠屋頂——用在地傳統工法而非隈研吾招牌的日式格柵，是「向場所學習」原則最直接的體現。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="lattice-thin"></div>
+
+<!-- ===================== 世界對照 ===================== -->
+<section class="alt" id="world">
+  <div class="wrap">
+    <div class="eyebrow">GLOBAL ECHO 世界對照</div>
+    <h2 class="title">不只他一個人在「輸」</h2>
+    <p class="lede">從東京到蘇黎世、寧波、澳洲、布吉納法索——一群建築師走著相似又各自不同的路。</p>
+
+    <div class="compare-list">
+      <div class="compare-item">
+        <div><div class="compare-name">藤本壯介</div><div class="compare-loc">日本｜弱い建築</div></div>
+        <div class="compare-desc">出發點是模糊的預感而非既有理論，靠試錯摸索出不完整、由局部關係構成的整體，比隈研吾更擁抱過程中的偶然與未知。</div>
+      </div>
+      <div class="compare-item">
+        <div><div class="compare-name">石上純也</div><div class="compare-loc">日本｜輕與消失</div></div>
+        <div class="compare-desc">代表作《四角いふうせん》是灌氦氣飄浮的1噸重方塊；2018年巴黎個展直接名為「FREEING ARCHITECTURE」，追求纖細、透明到近乎沒有存在感的空間。</div>
+      </div>
+      <div class="compare-item">
+        <div><div class="compare-name">Peter Zumthor</div><div class="compare-loc">瑞士｜材料濃縮</div></div>
+        <div class="compare-desc">與隈研吾是同世代「材料優先」的一對相反詞：隈研吾把建築打散成細碎顆粒，尊索爾則把材料濃縮成厚重沉靜的氛圍——一個消散，一個凝聚。</div>
+      </div>
+      <div class="compare-item">
+        <div><div class="compare-name">王澎</div><div class="compare-loc">中國｜拾荒式重生</div></div>
+        <div class="compare-desc">2012年普立茲克獎首位中國得主。與隈研吾同樣反對均質化的現代都市，但他搶救拆除老屋剩下的舊瓦片舊磚（如寧波博物館的「瓦爿牆」），隈研吾則延續傳統木構造的接合工藝——一個拾荒重生，一個工藝延續。</div>
+      </div>
+      <div class="compare-item">
+        <div><div class="compare-name">Glenn Murcutt</div><div class="compare-loc">澳洲｜批判性地域主義</div></div>
+        <div class="compare-desc">名言「touch the earth lightly」（輕觸大地），用輕量結構、可開闔的皮層回應澳洲氣候，幾乎只做小型住宅案。</div>
+      </div>
+      <div class="compare-item">
+        <div><div class="compare-name">Francis Kéré / Anna Heringer</div><div class="compare-loc">布吉納法索／德國｜在地材料</div></div>
+        <div class="compare-desc">Kéré用當地黏土磚結合被動通風蓋出Gando小學；Heringer在孟加拉的METI學校用夯土，預算35000美元，100%留在當地經濟。都用最少的資源、最在地的材料，回應「負ける建築」更廣義的全球親戚。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 反思與爭議 ===================== -->
+<section class="reflect" id="critique">
+  <div class="wrap">
+    <div class="eyebrow">CRITIQUE 反思與爭議</div>
+    <h2 class="title">理念撞上現實的兩道裂縫</h2>
+    <p class="lede">「負ける建築」最誠實的部分，不是它的成功案例，而是它跟制度現實碰撞時留下的痕跡。</p>
+
+    <div class="case-grid">
+      <div class="case">
+        <h3>雲の上のホテル拆除重建（1994–2021）</h3>
+        <p>木造建築標準耐用年數僅約22年。梼原町這棟旅館僅使用27年，就因漏雨與木材劣化拆除；當地政府重建新設施的預算，從原估6.2億日圓暴增到38.8億日圓——對人口僅約3千人的小鎮，是沉重的財政負擔。這是「建築接受有限性、隨時間變化甚至消逝」的哲學，撞上「地方政府期待50至100年耐用」的制度現實，最赤裸的一次。</p>
+      </div>
+      <div class="case">
+        <h3>仿木紋鋁板爭議</h3>
+        <p>新國立競技場部分部位曾被發現使用仿木紋鋁板取代真木材，引發「這還算木匠工藝嗎」的質疑。業界甚至戲稱隈研吾式木格柵近似一種可複製套用的「裝飾貼紙」語彙——當「負ける建築」的視覺語彙被大量複製到國家級工程與商業開發案，材料的誠實性是否還在，成為評論界持續辯論的問題。</p>
+      </div>
+    </div>
+
+    <p style="margin-top:36px;">評論同時指出，責任不該全部算在建築師頭上——技術審查不足的發包方、運營規劃有缺陷的自治體，都是「哲學理想」與「制度現實」結構性失配的一部分。而梼原町即便經歷了拆除爭議，仍持續委託隈研吾設計新設施，顯示地方對這段長期合作關係，並未真的視為一場失敗。</p>
+  </div>
+</section>
+
+<div class="lattice-divider"></div>
+
+<footer>
+  <div class="wrap">
+    <div class="kicker">Sources 資料來源</div>
+    <ul class="sources">
+      <li>維基百科（中文／日文）「隈研吾」條目</li>
+      <li>松岡正剛千夜千冊《負ける建築》書評 — 1000ya.isis.ne.jp</li>
+      <li>artscape.jp「負ける建築」書籍介紹</li>
+      <li>BuildApp News〈隈研吾の公共建築は「負の遺産」なのか?〉</li>
+      <li>Kengo Kuma and Associates 官方網站 kkaa.co.jp（作品、獲獎、時間軸）</li>
+      <li>Dezeen、Architizer、ArchDaily、Archello 各作品專題報導</li>
+      <li>忠泰美術館「場域・啟發—隈研吾展」展覽介紹</li>
+      <li>各項台灣媒體報導：ShoppingDesign、La Vie、Bella、聯合新聞網、自由時報、中央社等</li>
+      <li>Wikimedia Commons（本頁建築照片來源，各圖已於圖說標註攝影者與授權方式）</li>
+    </ul>
+    <p style="margin-top:40px; font-size:0.78rem; color:var(--ink-soft);">本頁為個人研究與教育用途之深度策展內容，非隈研吾建築都市設計事務所官方網站。</p>
+  </div>
+</footer>
+
+</body>
+</html>
